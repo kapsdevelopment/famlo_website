@@ -353,30 +353,6 @@ h3 {
   color: #fff;
 }
 
-.note-card {
-  max-width: 34rem;
-  margin-top: 24px;
-  padding: 18px 20px;
-  border: var(--border-strong);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 8px 0 var(--line);
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.5), transparent 32%),
-    var(--paper);
-}
-
-.note-card p {
-  color: var(--ink);
-  font-size: 1.04rem;
-  font-weight: 700;
-}
-
-.note-card.paper {
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.5), transparent 32%),
-    var(--paper);
-}
-
 .visual-stage {
   display: flex;
   flex-direction: column;
