@@ -189,7 +189,6 @@ p {
 
 .hero-copy,
 .hero-visual,
-.support-summary,
 .story-card,
 .support-panel,
 .form-card,
@@ -257,7 +256,6 @@ h3 {
 .value-card p,
 .cta-banner p,
 .support-copy,
-.summary-note,
 .form-intro,
 .faq-content p,
 .support-panel p,
@@ -363,8 +361,9 @@ h3 {
 }
 
 .visual-stage {
-  position: relative;
-  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .hero-visual {
@@ -391,10 +390,23 @@ h3 {
   border-radius: 30px;
 }
 
+.visual-callouts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.visual-callouts-top {
+  margin-bottom: 4px;
+}
+
+.visual-callouts-bottom {
+  margin-top: 4px;
+}
+
 .sticker-card,
 .mascot-chip {
-  position: absolute;
-  z-index: 2;
   border: var(--border-strong);
   border-radius: 26px;
   box-shadow: 0 9px 0 var(--line);
@@ -402,7 +414,7 @@ h3 {
 }
 
 .sticker-card {
-  width: min(260px, 48%);
+  width: min(248px, 48%);
 }
 
 .sticker-card strong {
@@ -413,15 +425,11 @@ h3 {
 }
 
 .sticker-card.lime {
-  top: 28px;
-  left: -10px;
   background: var(--lime);
   animation: floaty 5.6s ease-in-out infinite;
 }
 
 .sticker-card.paper {
-  right: 0;
-  bottom: 84px;
   background: var(--paper);
   animation: floaty 6.2s ease-in-out infinite reverse;
 }
@@ -435,12 +443,10 @@ h3 {
 }
 
 .mascot-chip {
-  left: 18px;
-  bottom: 6px;
   display: flex;
   align-items: center;
   gap: 14px;
-  width: min(360px, calc(100% - 36px));
+  width: min(360px, 100%);
   background: rgba(255, 250, 242, 0.96);
   animation: bob 6.8s ease-in-out infinite;
 }
@@ -489,7 +495,6 @@ h3 {
 .value-card,
 .feature-card,
 .quick-link-card,
-.support-summary,
 .support-panel,
 .form-card,
 .story-card,
@@ -607,62 +612,6 @@ h3 {
   padding-top: 42px;
 }
 
-.support-summary {
-  background:
-    radial-gradient(circle at top right, rgba(255, 255, 255, 0.42), transparent 24%),
-    linear-gradient(145deg, #fff8ee, #f6eee2);
-}
-
-.support-summary-head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-
-.support-summary-head img {
-  width: 84px;
-  height: 84px;
-  border-radius: 22px;
-  border: 3px solid var(--line);
-  background: #fff;
-}
-
-.summary-kicker {
-  background: var(--lime);
-  color: var(--ink);
-}
-
-.fact-list {
-  display: grid;
-  gap: 12px;
-}
-
-.fact-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 14px 16px;
-  border: 3px solid var(--line);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.58);
-  box-shadow: 0 5px 0 var(--line);
-}
-
-.fact-row span {
-  color: var(--muted-soft);
-  font-weight: 800;
-}
-
-.fact-row strong {
-  max-width: 60%;
-  text-align: right;
-}
-
-.summary-note {
-  margin-top: 18px;
-}
-
 .quick-link-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -699,6 +648,11 @@ h3 {
 
 .support-panel .eyebrow {
   background: var(--yellow);
+  color: var(--ink);
+}
+
+.support-panel .button-primary,
+.support-panel .button-secondary {
   color: var(--ink);
 }
 
@@ -914,7 +868,7 @@ h3 {
   }
 
   .visual-stage {
-    min-height: 560px;
+    gap: 16px;
   }
 
   .value-grid,
@@ -931,7 +885,7 @@ h3 {
 
   .nav-shell,
   .footer-shell,
-  .fact-row {
+  .support-hero-grid {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -941,6 +895,10 @@ h3 {
     justify-content: flex-start;
   }
 
+  .support-hero-grid {
+    display: block;
+  }
+
   .dashboard-grid,
   .value-grid,
   .quick-link-grid,
@@ -948,23 +906,18 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .visual-stage {
-    min-height: auto;
-    padding-bottom: 136px;
-  }
-
   .promo-frame {
     width: 100%;
   }
 
+  .visual-callouts,
+  .visual-callouts-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .sticker-card {
-    position: relative;
     width: 100%;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    margin-top: 14px;
   }
 
   .sticker-card.lime,
@@ -978,11 +931,7 @@ h3 {
   }
 
   .mascot-chip {
-    position: absolute;
-    left: 12px;
-    right: 12px;
-    width: auto;
-    bottom: 0;
+    width: 100%;
     animation: none;
   }
 }
@@ -1001,7 +950,6 @@ h3 {
   .feature-card,
   .quick-link-card,
   .story-card,
-  .support-summary,
   .support-panel,
   .form-card,
   .cta-banner,
@@ -1027,12 +975,6 @@ h3 {
   .cta-stack {
     width: 100%;
   }
-
-  .fact-row strong {
-    max-width: none;
-    text-align: left;
-  }
-
   .faq-item summary {
     font-size: 1.28rem;
   }
