@@ -357,11 +357,24 @@ h3 {
   max-width: 34rem;
   margin-top: 24px;
   padding: 18px 20px;
-  background: var(--paper);
+  border: var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 0 var(--line);
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.5), transparent 32%),
+    var(--paper);
+}
+
+.note-card p {
+  color: var(--ink);
+  font-size: 1.04rem;
+  font-weight: 700;
 }
 
 .note-card.paper {
-  background: var(--paper);
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.5), transparent 32%),
+    var(--paper);
 }
 
 .visual-stage {
@@ -704,16 +717,6 @@ h3 {
   margin-top: 20px;
 }
 
-.support-hero-links {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.support-quick-card {
-  min-height: 100%;
-}
-
 .quick-link-card {
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.54), transparent 26%),
@@ -972,9 +975,6 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .support-hero-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 820px) {
@@ -1002,8 +1002,7 @@ h3 {
   .dashboard-grid,
   .value-grid,
   .quick-link-grid,
-  .form-grid,
-  .support-hero-links {
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
