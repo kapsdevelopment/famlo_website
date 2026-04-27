@@ -483,12 +483,12 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 210px) minmax(0, 1fr) minmax(0, 210px);
   gap: 22px;
-  align-items: end;
+  align-items: center;
 }
 
 .showcase-main-stage {
   display: grid;
-  gap: 18px;
+  gap: 16px;
   justify-items: center;
 }
 
@@ -679,39 +679,10 @@ h3 {
   color: var(--muted);
 }
 
-.showcase-caption {
-  width: 100%;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 18px;
-}
-
-.showcase-caption-copy {
-  max-width: 34rem;
-}
-
-.showcase-caption-copy h3 {
-  margin-top: 12px;
-}
-
-.showcase-caption-copy p {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.showcase-controls {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
 .showcase-dots {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -1215,7 +1186,6 @@ h3 {
 
   .showcase-carousel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
   }
 
   .showcase-main-stage {
@@ -1269,15 +1239,6 @@ h3 {
   .showcase-side-button-prev,
   .showcase-side-button-next {
     justify-self: center;
-  }
-
-  .showcase-caption {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .showcase-controls {
-    justify-content: flex-start;
   }
 
   .promo-frame {

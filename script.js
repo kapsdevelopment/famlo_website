@@ -32,13 +32,9 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     return;
   }
 
-  // Bytt `image` til faktiske skjermbildefiler når appskuddene er klare.
   const slides = [
     {
-      badge: "Dashboard",
-      title: "Stor oversikt for travel morgen",
-      copy: "Dashboardet samler vær, kollektiv, kalender og Famlo-hjelp i én stor flate som fungerer godt på kjøkkenbordet eller veggen.",
-      shortLabel: "Dashboard",
+      title: "Dashboard",
       tone: "paper",
       image: "./assets/images/screenshot1.png",
       placeholder: {
@@ -53,10 +49,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       },
     },
     {
-      badge: "Vær",
-      title: "Detaljert vær når det faktisk trengs",
-      copy: "På stor iPad får man time for time-visning med god luft, tydelige kort og plass til å sammenligne dagene raskt.",
-      shortLabel: "Vær",
+      title: "Vær",
       tone: "sky",
       image: "./assets/images/screenshot2.png",
       placeholder: {
@@ -71,10 +64,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       },
     },
     {
-      badge: "5 dager",
-      title: "De nærmeste dagene er raske å lese",
-      copy: "Femdagersvisningen fungerer spesielt fint på iPad fordi hver dag får nok plass til å være nyttig uten å føles tung.",
-      shortLabel: "5 dager",
+      title: "Neste 5 dager",
       tone: "paper",
       image: "./assets/images/screenshot3.png",
       placeholder: {
@@ -89,10 +79,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       },
     },
     {
-      badge: "Måned",
-      title: "Månedsvisningen gir familien overblikk",
-      copy: "Når hele måneden ligger åpent på en stor skjerm, blir det lettere å snakke sammen om hva som faktisk skjer og hva som mangler.",
-      shortLabel: "Måned",
+      title: "Måned",
       tone: "paper",
       image: "./assets/images/screenshot5.png",
       placeholder: {
@@ -107,10 +94,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       },
     },
     {
-      badge: "År",
-      title: "Årsvisningen gjør det lett å se rytmen",
-      copy: "Når man zoomer ut til året, får man en tydelig følelse av ferier, helligdager og hvor tetthet og ro faktisk ligger.",
-      shortLabel: "År",
+      title: "År",
       tone: "paper",
       image: "./assets/images/screenshot4.png",
       placeholder: {
@@ -131,9 +115,6 @@ document.querySelectorAll("[data-year]").forEach((element) => {
   const prevScreen = root.querySelector('[data-showcase-screen="prev"]');
   const currentScreen = root.querySelector('[data-showcase-screen="current"]');
   const nextScreen = root.querySelector('[data-showcase-screen="next"]');
-  const badge = root.querySelector("[data-showcase-badge]");
-  const title = root.querySelector("[data-showcase-title]");
-  const copy = root.querySelector("[data-showcase-copy]");
   const dots = root.querySelector("[data-showcase-dots]");
   const buttons = root.querySelectorAll("[data-showcase-shift]");
 
@@ -210,18 +191,6 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     renderScreen(prevScreen, prev);
     renderScreen(currentScreen, current);
     renderScreen(nextScreen, next);
-
-    if (badge) {
-      badge.textContent = current.badge;
-    }
-
-    if (title) {
-      title.textContent = current.title;
-    }
-
-    if (copy) {
-      copy.textContent = current.copy;
-    }
 
     root
       .querySelector(".showcase-side-button-prev")
