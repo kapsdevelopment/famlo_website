@@ -489,11 +489,12 @@ h3 {
 .showcase-main-stage {
   display: grid;
   gap: 18px;
+  justify-items: center;
 }
 
 .showcase-side-button {
   display: grid;
-  gap: 12px;
+  gap: 0;
   padding: 0;
   border: 0;
   background: transparent;
@@ -508,24 +509,9 @@ h3 {
   transform: translateY(-4px);
 }
 
-.showcase-side-button:focus-visible,
-.showcase-control:focus-visible {
+.showcase-side-button:focus-visible {
   outline: 3px solid var(--line);
   outline-offset: 4px;
-}
-
-.showcase-side-caption {
-  justify-self: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 8px 14px;
-  border: 3px solid var(--line);
-  border-radius: var(--radius-pill);
-  box-shadow: 0 5px 0 var(--line);
-  background: var(--paper);
-  font-weight: 900;
 }
 
 .tablet-frame {
@@ -539,7 +525,7 @@ h3 {
 }
 
 .tablet-frame-large {
-  max-width: 760px;
+  max-width: 646px;
   margin-inline: auto;
 }
 
@@ -694,6 +680,7 @@ h3 {
 }
 
 .showcase-caption {
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -717,28 +704,9 @@ h3 {
 .showcase-controls {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
   flex-wrap: wrap;
   justify-content: flex-end;
-}
-
-.showcase-control {
-  min-height: 48px;
-  padding: 10px 16px;
-  border: 3px solid var(--line);
-  border-radius: var(--radius-pill);
-  box-shadow: 0 5px 0 var(--line);
-  background: var(--paper);
-  color: var(--ink);
-  font: inherit;
-  font-weight: 900;
-  cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-}
-
-.showcase-control:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 7px 0 var(--line);
 }
 
 .showcase-dots {
@@ -1382,9 +1350,7 @@ h3 {
     width: 100%;
   }
 
-  .showcase-control,
-  .showcase-side-button,
-  .showcase-side-caption {
+  .showcase-side-button {
     width: 100%;
   }
 

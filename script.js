@@ -131,8 +131,6 @@ document.querySelectorAll("[data-year]").forEach((element) => {
   const prevScreen = root.querySelector('[data-showcase-screen="prev"]');
   const currentScreen = root.querySelector('[data-showcase-screen="current"]');
   const nextScreen = root.querySelector('[data-showcase-screen="next"]');
-  const prevLabel = root.querySelector('[data-showcase-label="prev"]');
-  const nextLabel = root.querySelector('[data-showcase-label="next"]');
   const badge = root.querySelector("[data-showcase-badge]");
   const title = root.querySelector("[data-showcase-title]");
   const copy = root.querySelector("[data-showcase-copy]");
@@ -212,14 +210,6 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     renderScreen(prevScreen, prev);
     renderScreen(currentScreen, current);
     renderScreen(nextScreen, next);
-
-    if (prevLabel) {
-      prevLabel.textContent = prev.shortLabel;
-    }
-
-    if (nextLabel) {
-      nextLabel.textContent = next.shortLabel;
-    }
 
     if (badge) {
       badge.textContent = current.badge;
