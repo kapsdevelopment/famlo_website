@@ -195,7 +195,7 @@
         <div class="meta">
           <span class="pill"><strong>Gjelder for:</strong> Famlo mobilapp og relaterte tjenester</span>
           <span class="pill"><strong>Nettsted:</strong> famlo.no</span>
-          <span class="pill"><strong>Sist oppdatert:</strong> 2026-04-16</span>
+          <span class="pill"><strong>Sist oppdatert:</strong> 2026-04-27</span>
         </div>
       </div>
     </div>
@@ -271,7 +271,19 @@
         <li>familie- eller profilinformasjon du selv legger til</li>
       </ul>
 
-      <h3 style="margin:14px 0 6px;font-size:16px;">d) Chat, AI-svar og oppsummeringer</h3>
+      <h3 style="margin:14px 0 6px;font-size:16px;">d) Kjøp og abonnement</h3>
+      <p>
+        Hvis du kjøper tilgang, abonnement eller andre digitale produkter i Famlo, kan vi behandle
+        opplysninger som produkt-ID, kjøpstidspunkt, transaksjons- eller ordre-ID, kjøpstoken,
+        abonnementsstatus og tekniske kvitteringer eller varsler fra Apple App Store eller Google
+        Play.
+      </p>
+      <p>
+        Betaling skjer gjennom den relevante appbutikken. Famlo mottar ikke betalingskortnummer,
+        bankkontonummer eller tilsvarende betalingsinformasjon.
+      </p>
+
+      <h3 style="margin:14px 0 6px;font-size:16px;">e) Chat, AI-svar og oppsummeringer</h3>
       <p>
         Hvis du bruker Famlo-chat eller ber om en oppsummering, behandles meldingen din sammen med
         relevant dashboardkontekst, for eksempel vær, kollektiv, bilreiser og kalender.
@@ -282,29 +294,33 @@
         <li>den siste genererte oppsummeringen kan lagres på kontoen din for å vises i appen</li>
       </ul>
       <p>
-        Vi anbefaler at du ikke deler sensitiv personlig informasjon i chatten. Per i dag ser det
-        ikke ut til at Famlo lagrer en full, langsiktig serverhistorikk over alle chatmeldinger,
-        men meldinger behandles i selve forespørselen for å kunne levere svaret.
+        Vi anbefaler at du ikke deler sensitiv personlig informasjon i chatten. Per i dag lagrer
+        Famlo ikke en full, langsiktig serverhistorikk over alle chatmeldinger, men et begrenset
+        antall nylige meldinger kan holdes lokalt i appen mens chatten er åpen og sendes med i
+        neste forespørsel for å gi modellen kontekst. Meldinger behandles også av leverandøren som
+        genererer svaret.
       </p>
 
-      <h3 style="margin:14px 0 6px;font-size:16px;">e) Tegninger og avatarbilder</h3>
+      <h3 style="margin:14px 0 6px;font-size:16px;">f) Tegninger og avatarbilder</h3>
       <p>
-        Hvis du bruker avatarfunksjonen, kan vi lagre det utsnittet eller bildet du sender inn,
-        tilhørende metadata og avatarbildet som produseres eller opprettes i flyten.
+        Hvis du bruker avatarfunksjonen, behandles bildet eller utsnittet du sender inn for å kunne
+        lage et avatarbilde. Det innsendte bildet kan behandles av Famlos backend og av en
+        genereringsleverandør, sammen med metadata som filtype, utsnitt og bildestørrelse.
       </p>
       <p>
-        Slike filer lagres privat for å levere avatarfunksjonen. Avatarflyten er fortsatt under
-        utvikling, og hvordan generering skjer kan endres over tid.
+        Famlo lagrer normalt det produserte avatarbildet og nødvendig metadata privat på kontoen
+        din. Lokale arbeidsfiler på enheten forsøkes slettet etter at flyten er fullført.
+        Avatarflyten er fortsatt under utvikling, og hvordan generering skjer kan endres over tid.
       </p>
 
-      <h3 style="margin:14px 0 6px;font-size:16px;">f) Support- og kontakthenvendelser</h3>
+      <h3 style="margin:14px 0 6px;font-size:16px;">g) Support- og kontakthenvendelser</h3>
       <p>
         Hvis du kontakter oss via supportskjemaet, kan vi motta opplysninger som navn,
         e-postadresse, meldingstekst og annen informasjon du selv velger å sende inn, som
         skjermbilder, enhetstype eller OS-versjon.
       </p>
 
-      <h3 style="margin:14px 0 6px;font-size:16px;">g) Tekniske driftsdata</h3>
+      <h3 style="margin:14px 0 6px;font-size:16px;">h) Tekniske driftsdata</h3>
       <p>
         Tjenestene vi bruker for drift og sikkerhet kan behandle vanlige tekniske opplysninger som
         IP-adresse, forespørselstidspunkt og feillogger når du bruker appen eller nettsidene.
@@ -321,28 +337,32 @@
         <li>vise og lagre personlige innstillinger og favoritter</li>
         <li>levere kalender, bilreiser, familieområde, chat og oppsummeringer</li>
         <li>behandle tegninger eller bilder i avatarflyten</li>
+        <li>verifisere kjøp, abonnement og tilgang til betalte funksjoner</li>
         <li>svare på supporthenvendelser og slettingsforespørsler</li>
         <li>forbedre stabilitet, feilrette og beskytte tjenesten mot misbruk</li>
       </ul>
 
       <div class="hr"></div>
 
-      <h2>4. Tredjepartstjenester vi bruker</h2>
+      <h2>4. Tjenesteleverandører og datakilder</h2>
       <p>
-        Famlo er avhengig av flere underleverandører og datakilder. Disse kan behandle opplysninger
-        i den grad det er nødvendig for å levere funksjonene:
+        Famlo er avhengig av underleverandører og eksterne datakilder for drift, innlogging,
+        database, lagring, support, betaling, kart, vær, kollektivdata og AI-funksjoner. Hvilke
+        konkrete leverandører vi bruker kan endres over tid når tjenesten utvikles, men de skal bare
+        behandle opplysninger i den grad det er nødvendig for å levere eller sikre funksjonene.
       </p>
       <ul>
-        <li><strong>Supabase:</strong> autentisering, database, lagring og backend-funksjoner</li>
-        <li><strong>Formcarry:</strong> håndtering av supportskjema</li>
-        <li><strong>MET:</strong> værdata</li>
-        <li><strong>Entur:</strong> kollektivdata og stoppesøk</li>
-        <li><strong>Apple Maps:</strong> adressesøk og bilreiseberegninger</li>
-        <li><strong>AI-leverandører brukt av Famlo:</strong> for eksempel OpenAI og/eller NorMistral-baserte tjenester for chat og oppsummeringer</li>
+        <li>drifts- og backendleverandører for innlogging, database, lagring og serverfunksjoner</li>
+        <li>support- og kontaktskjema-leverandører</li>
+        <li>appbutikkene og betalingssystemene for kjøp, abonnement og kvitteringsverifisering</li>
+        <li>datakilder for vær, kollektivtransport, kart, adressesøk og reiseberegninger</li>
+        <li>AI- og bildebehandlingsleverandører for chat, oppsummeringer og avatarfunksjoner</li>
       </ul>
       <p>
-        Disse tjenestene behandler opplysninger etter egne vilkår og personvernregler når de brukes
-        som en del av Famlo.
+        Eksempler på leverandører og datakilder som kan brukes er Supabase, Formcarry, MET, Entur,
+        Apple Maps, Apple App Store, Google Play og AI-leverandører som OpenAI eller
+        NorMistral-baserte tjenester. Leverandørene kan behandle opplysninger etter egne vilkår og
+        personvernregler når de brukes som en del av Famlo.
       </p>
 
       <div class="hr"></div>
@@ -354,12 +374,13 @@
       </p>
       <ul>
         <li>gjestedata som lagres lokalt på enheten kan du vanligvis fjerne ved å slette appen</li>
-        <li>konto- og funksjonsdata kan slettes når du ber om sletting av konto eller data</li>
+        <li>konto- og funksjonsdata kan slettes når du sletter konto i appen eller ber om sletting av konto eller data</li>
         <li>kopier i sikkerhetskopier og logger kan bli liggende en begrenset periode før de overskrives eller slettes</li>
       </ul>
       <p>
-        Du kan bruke <a href="../support/">support-siden</a> hvis du vil be om sletting av konto
-        eller bestemte data.
+        Du kan slette konto i appen der funksjonen er tilgjengelig. Du kan også bruke
+        <a href="../support/">support-siden</a> hvis du vil be om hjelp til sletting av konto eller
+        bestemte data.
       </p>
 
       <div class="hr"></div>
