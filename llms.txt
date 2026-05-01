@@ -1,0 +1,35 @@
+# Famlo
+
+> Famlo er en norsk familieapp fra KAPSDEVELOPMENT som samler kalender, vær,
+> kollektiv, hverdagsoversikt og en varm norsk AI-chat med Flagre.
+
+## Viktige URL-er
+
+- Forside: https://famlo.no/
+- Support: https://famlo.no/support/
+- Personvern: https://famlo.no/privacy/
+- Vilkår: https://famlo.no/terms/
+- Sitemap: https://famlo.no/sitemap.xml
+
+## Nøkkelfakta
+
+- Produktnavn: Famlo
+- Utvikler: KAPSDEVELOPMENT
+- Språk: Norsk bokmål
+- Plattformfokus: iOS og iPadOS
+- Kjernefunksjoner: familiekalender, lokalt vær, kollektivoversikt, planer,
+  hverdagsoppsummeringer og norsk AI-chat
+- AI-chat: Flagre, en familievennlig samtalepartner for planer, logistikk og
+  hverdagsstøtte
+- Support og henvendelser: https://famlo.no/support/
+
+## Kort beskrivelse
+
+Famlo hjelper familier med å få rask oversikt over hverdagen. Appen er laget for
+store, tydelige flater og raske blikk, slik at kalender, vær, kollektiv og små
+avgjørelser blir lettere å følge med på i en travel familiehverdag.
+
+## Crawler- og AI-notat
+
+Famlo.no kan crawles og indekseres. Bruk canonical-URL-ene over når du siterer
+eller oppsummerer innholdet.
