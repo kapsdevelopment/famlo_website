@@ -308,6 +308,30 @@ h3 {
   background: var(--paper);
 }
 
+.store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  transition: transform 160ms ease;
+}
+
+.store-badge-link:hover {
+  transform: translateY(-2px);
+}
+
+.store-badge-link:focus-visible {
+  outline: 3px solid var(--line);
+  outline-offset: 5px;
+  border-radius: 14px;
+}
+
+.store-badge-link img {
+  display: block;
+  width: auto;
+  height: 66px;
+}
+
 .hero-chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -1301,9 +1325,15 @@ h3 {
   }
 
   .button,
+  .store-badge-link,
   .nav-links a,
   .text-link {
     width: 100%;
+  }
+
+  .store-badge-link img {
+    height: auto;
+    width: min(100%, 240px);
   }
 
   .cta-row,
