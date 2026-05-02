@@ -36,29 +36,29 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     {
       title: "Dashboard",
       tone: "paper",
-      image: "./assets/images/screenshot1.png",
+      image: "./assets/images/screenshot-dashboard-oslo.png",
       placeholder: {
         kicker: "Oversikt",
         status: "Nå",
         headline: "Morgenklar",
         subtitle: "Vær og neste avganger side om side.",
         panels: [
-          { title: "Vær", detail: "Lambertseter" },
-          { title: "Kollektiv", detail: "Karlsrud → Jernbanetorget" },
+          { title: "Vær", detail: "Oslo" },
+          { title: "Kollektiv", detail: "Majorstuen" },
         ],
       },
     },
     {
       title: "Vær",
       tone: "sky",
-      image: "./assets/images/screenshot2.png",
+      image: "./assets/images/screenshot-weather-oslo.png",
       placeholder: {
         kicker: "Vær",
         status: "Detalj",
         headline: "Tre dager frem",
         subtitle: "En stor flate som gjør det lett å sammenligne været time for time.",
         panels: [
-          { title: "Nå", detail: "Lambertseter" },
+          { title: "Nå", detail: "Oslo" },
           { title: "Vind", detail: "Live" },
         ],
       },
