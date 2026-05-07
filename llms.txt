@@ -18,6 +18,7 @@
 - Språk: Norsk bokmål
 - Plattformfokus: Android, iOS og iPadOS
 - Google Play: https://play.google.com/store/apps/details?id=com.kapsdevelopment.famlo&pcampaignid=web_share
+- App Store: https://apps.apple.com/us/app/famlo/id6762027935
 - Kjernefunksjoner: familiekalender, lokalt vær, kollektivoversikt, planer,
   hverdagsoppsummeringer og norsk AI-chat
 - AI-chat: Flagre, en familievennlig samtalepartner for planer, logistikk og
