@@ -32,79 +32,241 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     return;
   }
 
+  const language = (document.documentElement.lang || "nb").split("-")[0];
+  const localize = (value) => {
+    if (typeof value === "string") {
+      return value;
+    }
+
+    return value?.[language] || value?.nb || "";
+  };
+  const carouselLabels = {
+    nb: {
+      previous: "Vis forrige skjermbilde",
+      next: "Vis neste skjermbilde",
+    },
+    en: {
+      previous: "Show previous screenshot",
+      next: "Show next screenshot",
+    },
+    fi: {
+      previous: "Näytä edellinen kuva",
+      next: "Näytä seuraava kuva",
+    },
+  };
+  const labels = carouselLabels[language] || carouselLabels.nb;
+
   const slides = [
     {
-      title: "Dashboard",
+      title: {
+        nb: "Dashboard",
+        en: "Dashboard",
+        fi: "Kojelauta",
+      },
       tone: "paper",
-      image: "./assets/images/screenshot-dashboard-oslo.png",
+      image: "/assets/images/screenshot-dashboard-oslo.png",
       placeholder: {
-        kicker: "Oversikt",
-        status: "Nå",
-        headline: "Morgenklar",
-        subtitle: "Vær og neste avganger side om side.",
+        kicker: {
+          nb: "Oversikt",
+          en: "Overview",
+          fi: "Yleiskuva",
+        },
+        status: {
+          nb: "Nå",
+          en: "Now",
+          fi: "Nyt",
+        },
+        headline: {
+          nb: "Morgenklar",
+          en: "Ready for the morning",
+          fi: "Valmis aamuun",
+        },
+        subtitle: {
+          nb: "Vær og neste avganger side om side.",
+          en: "Weather and next departures side by side.",
+          fi: "Sää ja seuraavat lähdöt vierekkäin.",
+        },
         panels: [
-          { title: "Vær", detail: "Oslo" },
-          { title: "Kollektiv", detail: "Majorstuen" },
+          {
+            title: { nb: "Vær", en: "Weather", fi: "Sää" },
+            detail: "Oslo",
+          },
+          {
+            title: { nb: "Kollektiv", en: "Transit", fi: "Joukkoliikenne" },
+            detail: "Majorstuen",
+          },
         ],
       },
     },
     {
-      title: "Vær",
+      title: {
+        nb: "Vær",
+        en: "Weather",
+        fi: "Sää",
+      },
       tone: "sky",
-      image: "./assets/images/screenshot-weather-oslo.png",
+      image: "/assets/images/screenshot-weather-oslo.png",
       placeholder: {
-        kicker: "Vær",
-        status: "Detalj",
-        headline: "Tre dager frem",
-        subtitle: "En stor flate som gjør det lett å sammenligne været time for time.",
+        kicker: {
+          nb: "Vær",
+          en: "Weather",
+          fi: "Sää",
+        },
+        status: {
+          nb: "Detalj",
+          en: "Details",
+          fi: "Tiedot",
+        },
+        headline: {
+          nb: "Tre dager frem",
+          en: "Three days ahead",
+          fi: "Kolme päivää eteenpäin",
+        },
+        subtitle: {
+          nb: "En stor flate som gjør det lett å sammenligne været time for time.",
+          en: "A large view that makes it easy to compare the weather hour by hour.",
+          fi: "Suuri näkymä tekee säästä helpon verrata tunti tunnilta.",
+        },
         panels: [
-          { title: "Nå", detail: "Oslo" },
-          { title: "Vind", detail: "Live" },
+          {
+            title: { nb: "Nå", en: "Now", fi: "Nyt" },
+            detail: "Oslo",
+          },
+          {
+            title: { nb: "Vind", en: "Wind", fi: "Tuuli" },
+            detail: "Live",
+          },
         ],
       },
     },
     {
-      title: "Neste 5 dager",
+      title: {
+        nb: "Neste 5 dager",
+        en: "Next 5 days",
+        fi: "Seuraavat 5 päivää",
+      },
       tone: "paper",
-      image: "./assets/images/screenshot3.png",
+      image: "/assets/images/screenshot3.png",
       placeholder: {
-        kicker: "Kalender",
-        status: "5 dager",
-        headline: "Dagens flyt",
-        subtitle: "Den nære planleggingen blir tydelig uten å miste roen i layouten.",
+        kicker: {
+          nb: "Kalender",
+          en: "Calendar",
+          fi: "Kalenteri",
+        },
+        status: {
+          nb: "5 dager",
+          en: "5 days",
+          fi: "5 päivää",
+        },
+        headline: {
+          nb: "Dagens flyt",
+          en: "The flow of the day",
+          fi: "Päivän kulku",
+        },
+        subtitle: {
+          nb: "Den nære planleggingen blir tydelig uten å miste roen i layouten.",
+          en: "Near-term planning stays clear without making the layout noisy.",
+          fi: "Lähiajan suunnittelu pysyy selkeänä ilman levotonta asettelua.",
+        },
         panels: [
-          { title: "Mandag", detail: "3 aktiviteter" },
-          { title: "Neste", detail: "Fredag" },
+          {
+            title: { nb: "Mandag", en: "Monday", fi: "Maanantai" },
+            detail: {
+              nb: "3 aktiviteter",
+              en: "3 activities",
+              fi: "3 menoa",
+            },
+          },
+          {
+            title: { nb: "Neste", en: "Next", fi: "Seuraava" },
+            detail: { nb: "Fredag", en: "Friday", fi: "Perjantai" },
+          },
         ],
       },
     },
     {
-      title: "Måned",
+      title: {
+        nb: "Måned",
+        en: "Month",
+        fi: "Kuukausi",
+      },
       tone: "paper",
-      image: "./assets/images/screenshot5.png",
+      image: "/assets/images/screenshot5.png",
       placeholder: {
-        kicker: "Kalender",
-        status: "Måned",
-        headline: "Hele april",
-        subtitle: "Store ruter gjør det mulig å se både rytme og detaljer samtidig.",
+        kicker: {
+          nb: "Kalender",
+          en: "Calendar",
+          fi: "Kalenteri",
+        },
+        status: {
+          nb: "Måned",
+          en: "Month",
+          fi: "Kuukausi",
+        },
+        headline: {
+          nb: "Hele april",
+          en: "All of April",
+          fi: "Koko huhtikuu",
+        },
+        subtitle: {
+          nb: "Store ruter gjør det mulig å se både rytme og detaljer samtidig.",
+          en: "Large cells make it possible to see rhythm and details at the same time.",
+          fi: "Suuret ruudut näyttävät sekä rytmin että yksityiskohdat samalla kertaa.",
+        },
         panels: [
-          { title: "Måneden", detail: "30 dager" },
-          { title: "Aktiviteter", detail: "4 planlagt" },
+          {
+            title: { nb: "Måneden", en: "Month", fi: "Kuukausi" },
+            detail: { nb: "30 dager", en: "30 days", fi: "30 päivää" },
+          },
+          {
+            title: { nb: "Aktiviteter", en: "Activities", fi: "Menot" },
+            detail: { nb: "4 planlagt", en: "4 planned", fi: "4 suunniteltu" },
+          },
         ],
       },
     },
     {
-      title: "År",
+      title: {
+        nb: "År",
+        en: "Year",
+        fi: "Vuosi",
+      },
       tone: "paper",
-      image: "./assets/images/screenshot4.png",
+      image: "/assets/images/screenshot4.png",
       placeholder: {
-        kicker: "Kalender",
-        status: "År",
-        headline: "Hele 2026",
-        subtitle: "Et rolig årsoverblikk for planlegging på lang sikt.",
+        kicker: {
+          nb: "Kalender",
+          en: "Calendar",
+          fi: "Kalenteri",
+        },
+        status: {
+          nb: "År",
+          en: "Year",
+          fi: "Vuosi",
+        },
+        headline: {
+          nb: "Hele 2026",
+          en: "All of 2026",
+          fi: "Koko 2026",
+        },
+        subtitle: {
+          nb: "Et rolig årsoverblikk for planlegging på lang sikt.",
+          en: "A calm year view for long-term planning.",
+          fi: "Rauhallinen vuosinäkymä pitkän aikavälin suunnitteluun.",
+        },
         panels: [
-          { title: "Året", detail: "365 dager" },
-          { title: "Aktiviteter", detail: "8 registrert" },
+          {
+            title: { nb: "Året", en: "Year", fi: "Vuosi" },
+            detail: { nb: "365 dager", en: "365 days", fi: "365 päivää" },
+          },
+          {
+            title: { nb: "Aktiviteter", en: "Activities", fi: "Menot" },
+            detail: {
+              nb: "8 registrert",
+              en: "8 registered",
+              fi: "8 tallennettu",
+            },
+          },
         ],
       },
     },
@@ -132,7 +294,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         <img
           class="showcase-screen-image"
           src="${slide.image}"
-          alt="${slide.title}"
+          alt="${localize(slide.title)}"
           loading="lazy"
         />
       `;
@@ -144,8 +306,8 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       .map(
         (panel) => `
           <div class="showcase-screen-panel">
-            <strong>${panel.title}</strong>
-            <span>${panel.detail}</span>
+            <strong>${localize(panel.title)}</strong>
+            <span>${localize(panel.detail)}</span>
           </div>
         `,
       )
@@ -154,12 +316,12 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     target.innerHTML = `
       <div class="showcase-screen-placeholder showcase-tone-${slide.tone}">
         <div class="showcase-screen-top">
-          <span class="showcase-screen-kicker">${kicker}</span>
-          <span class="showcase-screen-status">${status}</span>
+          <span class="showcase-screen-kicker">${localize(kicker)}</span>
+          <span class="showcase-screen-status">${localize(status)}</span>
         </div>
         <div class="showcase-screen-body">
-          <div class="showcase-screen-title">${headline}</div>
-          <div class="showcase-screen-subtitle">${subtitle}</div>
+          <div class="showcase-screen-title">${localize(headline)}</div>
+          <div class="showcase-screen-subtitle">${localize(subtitle)}</div>
         </div>
         <div class="showcase-screen-panels">
           ${panelsMarkup}
@@ -194,10 +356,10 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 
     root
       .querySelector(".showcase-side-button-prev")
-      ?.setAttribute("aria-label", `Vis forrige skjermbilde: ${prev.title}`);
+      ?.setAttribute("aria-label", `${labels.previous}: ${localize(prev.title)}`);
     root
       .querySelector(".showcase-side-button-next")
-      ?.setAttribute("aria-label", `Vis neste skjermbilde: ${next.title}`);
+      ?.setAttribute("aria-label", `${labels.next}: ${localize(next.title)}`);
 
     renderDots();
   }
@@ -227,6 +389,29 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     nextField.value = `${window.location.origin}${window.location.pathname}?submitted=1#contact`;
   }
 
+  const language = (document.documentElement.lang || "nb").split("-")[0];
+  const messages = {
+    nb: {
+      success: "Takk! Meldingen er sendt. Vi følger opp så fort vi kan.",
+      pending: "Sender meldingen din...",
+      error:
+        "Kunne ikke bekrefte innsendingen akkurat nå. Prøv igjen, eller send e-post til contact@kapsdevelopment.com.",
+    },
+    en: {
+      success: "Thank you! Your message has been sent. We will follow up as soon as we can.",
+      pending: "Sending your message...",
+      error:
+        "We could not confirm the submission right now. Please try again, or email contact@kapsdevelopment.com.",
+    },
+    fi: {
+      success: "Kiitos! Viestisi on lähetetty. Palaamme asiaan mahdollisimman pian.",
+      pending: "Lähetetään viestiäsi...",
+      error:
+        "Lähetystä ei voitu vahvistaa juuri nyt. Yritä uudelleen tai lähetä sähköposti osoitteeseen contact@kapsdevelopment.com.",
+    },
+  };
+  const copy = messages[language] || messages.nb;
+
   const setStatus = (message, state) => {
     statusBox.textContent = message;
     statusBox.className = `form-status is-visible ${state}`;
@@ -234,7 +419,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 
   const params = new URLSearchParams(window.location.search);
   if (params.get("submitted") === "1") {
-    setStatus("Takk! Meldingen er sendt. Vi følger opp så fort vi kan.", "is-success");
+    setStatus(copy.success, "is-success");
 
     const cleanUrl = new URL(window.location.href);
     cleanUrl.searchParams.delete("submitted");
@@ -246,7 +431,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 
   form.addEventListener("submit", () => {
     pending = true;
-    setStatus("Sender meldingen din...", "is-pending");
+    setStatus(copy.pending, "is-pending");
 
     if (timer) {
       clearTimeout(timer);
@@ -258,10 +443,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       }
 
       pending = false;
-      setStatus(
-        "Kunne ikke bekrefte innsendingen akkurat nå. Prøv igjen, eller send e-post til contact@kapsdevelopment.com.",
-        "is-error",
-      );
+      setStatus(copy.error, "is-error");
     }, 9000);
   });
 
@@ -276,7 +458,7 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       clearTimeout(timer);
     }
 
-    setStatus("Takk! Meldingen er sendt. Vi følger opp så fort vi kan.", "is-success");
+    setStatus(copy.success, "is-success");
     window.setTimeout(() => form.reset(), 60);
   });
 })();

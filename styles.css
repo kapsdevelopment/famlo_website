@@ -157,6 +157,42 @@ p {
   gap: 10px;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 3px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 250, 242, 0.88);
+  box-shadow: 0 5px 0 var(--line);
+}
+
+.language-switcher a {
+  min-width: 42px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.language-switcher a:hover {
+  transform: none;
+  box-shadow: none;
+  background: rgba(30, 27, 22, 0.08);
+}
+
+.language-switcher a.is-active {
+  background: var(--lime);
+  color: var(--ink);
+}
+
 .nav-links a,
 .text-link {
   padding: 10px 16px;
@@ -1245,6 +1281,10 @@ h3 {
     justify-content: flex-start;
   }
 
+  .language-switcher {
+    order: 2;
+  }
+
   .support-hero-grid {
     display: block;
   }
@@ -1327,8 +1367,13 @@ h3 {
   .button,
   .store-badge-link,
   .nav-links a,
-  .text-link {
+  .text-link,
+  .language-switcher {
     width: 100%;
+  }
+
+  .language-switcher {
+    justify-content: center;
   }
 
   .store-badge-link img {

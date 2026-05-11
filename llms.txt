@@ -6,16 +6,21 @@
 ## Viktige URL-er
 
 - Forside: https://famlo.no/
+- English front page: https://famlo.no/en/
+- Suomenkielinen etusivu: https://famlo.no/fi/
 - Support: https://famlo.no/support/
-- Personvern: https://famlo.no/privacy/
-- Vilkår: https://famlo.no/terms/
+- English support: https://famlo.no/en/support/
+- Suomenkielinen tuki: https://famlo.no/fi/support/
+- Privacy policy (English only): https://famlo.no/privacy/
+- Terms of use (English only): https://famlo.no/terms/
 - Sitemap: https://famlo.no/sitemap.xml
 
 ## Nøkkelfakta
 
 - Produktnavn: Famlo
 - Utvikler: KAPSDEVELOPMENT
-- Språk: Norsk bokmål
+- Språk: Norsk bokmål, engelsk og finsk
+- Juridiske sider: Kun engelsk
 - Plattformfokus: Android, iOS og iPadOS
 - Google Play: https://play.google.com/store/apps/details?id=com.kapsdevelopment.famlo&pcampaignid=web_share
 - App Store: https://apps.apple.com/us/app/famlo/id6762027935
