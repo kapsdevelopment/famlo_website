@@ -64,7 +64,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         fi: "Kojelauta",
       },
       tone: "paper",
-      image: "/assets/images/screenshot-dashboard-oslo.png",
+      image: {
+        nb: "/assets/images/screenshot-dashboard-oslo.png",
+        en: "/assets/images/carousel-dashboard-en.png",
+        fi: "/assets/images/carousel-dashboard-fi.png",
+      },
       placeholder: {
         kicker: {
           nb: "Oversikt",
@@ -105,7 +109,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         fi: "Sää",
       },
       tone: "sky",
-      image: "/assets/images/screenshot-weather-oslo.png",
+      image: {
+        nb: "/assets/images/screenshot-weather-oslo.png",
+        en: "/assets/images/carousel-weather-en.png",
+        fi: "/assets/images/carousel-weather-fi.png",
+      },
       placeholder: {
         kicker: {
           nb: "Vær",
@@ -146,7 +154,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         fi: "Seuraavat 5 päivää",
       },
       tone: "paper",
-      image: "/assets/images/screenshot3.png",
+      image: {
+        nb: "/assets/images/screenshot3.png",
+        en: "/assets/images/carousel-5days-en.png",
+        fi: "/assets/images/carousel-5days-fi.png",
+      },
       placeholder: {
         kicker: {
           nb: "Kalender",
@@ -191,7 +203,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         fi: "Kuukausi",
       },
       tone: "paper",
-      image: "/assets/images/screenshot5.png",
+      image: {
+        nb: "/assets/images/screenshot5.png",
+        en: "/assets/images/carousel-month-en.png",
+        fi: "/assets/images/carousel-month-fi.png",
+      },
       placeholder: {
         kicker: {
           nb: "Kalender",
@@ -232,7 +248,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
         fi: "Vuosi",
       },
       tone: "paper",
-      image: "/assets/images/screenshot4.png",
+      image: {
+        nb: "/assets/images/screenshot4.png",
+        en: "/assets/images/carousel-year-en.png",
+        fi: "/assets/images/carousel-year-fi.png",
+      },
       placeholder: {
         kicker: {
           nb: "Kalender",
@@ -289,11 +309,13 @@ document.querySelectorAll("[data-year]").forEach((element) => {
       return;
     }
 
-    if (slide.image) {
+    const image = localize(slide.image);
+
+    if (image) {
       target.innerHTML = `
         <img
           class="showcase-screen-image"
-          src="${slide.image}"
+          src="${image}"
           alt="${localize(slide.title)}"
           loading="lazy"
         />
