@@ -13,6 +13,8 @@
 - Suomenkielinen tuki: https://famlo.no/fi/support/
 - Personvern for Famlo og Famlo kids: https://famlo.no/privacy/
 - Brukervilkår for Famlo og Famlo kids: https://famlo.no/terms/
+- Privacy notice and terms of use: https://famlo.no/en/privacy/ · https://famlo.no/en/terms/
+- Tietosuojaseloste ja käyttöehdot: https://famlo.no/fi/privacy/ · https://famlo.no/fi/terms/
 - Sitemap: https://famlo.no/sitemap.xml
 
 ## Nøkkelfakta
@@ -20,7 +22,7 @@
 - Produktnavn: Famlo
 - Utvikler: KAPSDEVELOPMENT
 - Språk: Norsk bokmål, engelsk og finsk
-- Juridiske sider: Kun engelsk
+- Personvern, brukervilkår og support dekker Famlo og Famlo Kids på norsk, engelsk og finsk.
 - Plattformfokus: Android, iOS og iPadOS
 - Google Play: https://play.google.com/store/apps/details?id=com.kapsdevelopment.famlo&pcampaignid=web_share
 - App Store: https://apps.apple.com/us/app/famlo/id6762027935

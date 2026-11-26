@@ -37,17 +37,27 @@
   </url>
   <url>
     <loc>https://famlo.no/en/support/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://famlo.no/fi/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://famlo.no/fi/support/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://famlo.no/fi/privacy/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://famlo.no/fi/terms/</loc>
+    <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

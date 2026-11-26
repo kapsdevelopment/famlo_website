@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Famlo-tuki | Ohjeet, yhteys ja usein kysytyt kysymykset</title>
+    <title>Famlo- ja Famlo Kids -sovellusten käyttäjätuki</title>
     <meta
       name="description"
-      content="Famlo-tuki. Ota yhteyttä, ilmoita virheistä, lähetä toiveita ja pyydä tilin tai tietojen poistamista."
+      content="Apua Famlo- ja Famlo Kids -sovellusten käyttöön. Yhdistä puhelin perheeseen, kysy kalenterista tai pyydä tietojen poistamista."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#c8f359" />
@@ -22,10 +22,10 @@
     <meta property="og:site_name" content="Famlo" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fi_FI" />
-    <meta property="og:title" content="Famlo-tuki | Ohjeet, yhteys ja usein kysytyt kysymykset" />
+    <meta property="og:title" content="Famlo- ja Famlo Kids -sovellusten käyttäjätuki" />
     <meta
       property="og:description"
-      content="Ota yhteyttä Famlo-tukeen, ilmoita virheistä, lähetä toiveita tai pyydä tilin ja tietojen poistamista."
+      content="Apua Famlo- ja Famlo Kids -sovellusten käyttöön. Yhdistä puhelin perheeseen, kysy kalenterista tai pyydä tietojen poistamista."
     />
     <meta property="og:url" content="https://famlo.no/fi/support/" />
     <meta property="og:image" content="https://famlo.no/assets/images/famlo_promo.png" />
@@ -37,14 +37,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../styles.css" />
+    <style>
+      @media (min-width: 821px) {
+        #famlo-kids, #contact, #delete-data, #faq { scroll-margin-top: 8rem; }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "@id": "https://famlo.no/fi/support/#webpage",
         "url": "https://famlo.no/fi/support/",
-        "name": "Famlo-tuki",
-        "description": "Famlo-tukisivu, jossa on yhteydenottolomake, usein kysytyt kysymykset sekä tietoa tilin tai tietojen poistamisesta.",
+        "name": "Famlo- ja Famlo Kids -sovellusten käyttäjätuki",
+        "description": "Apua Famlo- ja Famlo Kids -sovellusten käyttöön. Yhdistä puhelin perheeseen, kysy kalenterista tai pyydä tietojen poistamista.",
         "inLanguage": "fi",
         "isPartOf": {
           "@type": "WebSite",
@@ -86,76 +91,48 @@
 
     <main>
       <section class="section support-hero">
-        <div class="container support-hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow lime">Famlo-tuki</span>
-            <h1>Apua kysymyksiin, virheisiin, toiveisiin ja tietojen poistoon.</h1>
-            <p class="hero-lead">
-              Käytä tätä sivua, jos haluat ilmoittaa virheestä, kysyä jotakin,
-              lähettää toiveen tai pyytää tilin tai tietojen poistamista. Tuen
-              pitäisi olla yhtä helppoa kuin sovelluksen käyttäminen.
-            </p>
-            <p class="support-copy">
-              Famlo käyttää samaa yhteydenottokanavaa kuin muut sovelluksemme.
-              Voit lähettää viestin myös kirjautumatta tai käyttäessäsi sovellusta
-              vierastilassa.
-            </p>
-
+        <div class="container">
+          <div class="hero-copy">
+            <h1>Apua Famlon ja Famlo Kidsin käyttöön</h1>
+            <p class="hero-lead">Täältä saat apua kummankin sovelluksen käyttöön. Voit ottaa meihin yhteyttä kirjautumatta.</p>
             <div class="cta-row">
-              <a class="button button-primary" href="#contact">Avaa yhteydenottolomake</a>
+              <a class="button button-primary" href="#contact">Ota yhteyttä</a>
+              <a class="button button-secondary" href="#famlo-kids">Apua Famlo Kidsin käyttöön</a>
               <a class="button button-secondary" href="#delete-data">Poista tili tai tiedot</a>
-              <a class="button button-secondary" href="../">Etusivulle</a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="support-hero-side reveal">
-            <article class="support-summary-card">
-              <span class="summary-kicker">Näin saat apua</span>
-              <h2>Yksi tukipolku useimpiin tarpeisiin.</h2>
-              <p>
-                Famlo käyttää yhtä selkeää yhteydenottotapaa kysymyksille,
-                virheilmoituksille, toiveille ja poistopyynnöille.
-              </p>
-
-              <div class="support-mini-list">
-                <div class="support-mini-item">
-                  <span>1</span>
-                  <div>
-                    <strong>Valitse aihe</strong>
-                    <p>Virheilmoitus, kysymys, ominaisuustoive tai poistopyyntö.</p>
-                  </div>
-                </div>
-
-                <div class="support-mini-item">
-                  <span>2</span>
-                  <div>
-                    <strong>Kuvaa tarve lyhyesti</strong>
-                    <p>Kuvakaappaus, aika, laite tai OS-versio auttaa virheissä.</p>
-                  </div>
-                </div>
-
-                <div class="support-mini-item">
-                  <span>3</span>
-                  <div>
-                    <strong>Lähetä myös vieraana</strong>
-                    <p>Sinun ei tarvitse olla kirjautunut käyttääksesi tukisivua.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="support-pill-row" aria-label="Tukipisteet">
-                <span class="hero-chip">Vierastila ok</span>
-                <span class="hero-chip blue">UKK</span>
-                <span class="hero-chip orange">Poista tili tai tiedot</span>
-              </div>
-            </article>
+      <section class="section" id="famlo-kids">
+        <div class="container">
+          <h2>Apua Famlo Kidsin käyttöön</h2>
+          <p>Kokeiluvaiheessa ohjeet koskevat perheitä, joilla on käytössään Famlo Kids ja vanhempien sovelluksen ”Lapset ja perhe” -näkymä.</p>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Miten yhdistän uuden puhelimen?</summary>
+              <div class="faq-content"><p>Avaa Famlo Kids lapsen puhelimessa. Jos näet ilmoituksen ”Tämän puhelimen yhteys on katkaistu”, valitse ”Näytä uusi koodi”. Avaa Famlo omalla laitteellasi, valitse ”Skannaa QR-koodi” ja skannaa koodi lapsen näytöltä. Valitse lapsen olemassa oleva profiili ja sitten ”Yhdistä”. Lapsi näkee taas oman avatarinsa ja kalenterinsa. Voit aloittaa skannauksen myös kohdasta ”Lapset ja perhe”.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Miksi sisarus näkee tapahtuman?</summary>
+              <div class="faq-content"><p>Kun lapsi lisää kalenteriinsa uinnin, se näkyy lapsen ”Oma päivä” -näkymässä ja ”Perhe”-näkymässä. Sisarus näkee sen omassa päivässään, jos hänet on merkitty osallistujaksi tai tapahtuma on tarkoitettu koko perheelle.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Miten katkaisen kadonneen puhelimen yhteyden?</summary>
+              <div class="faq-content"><p>Avaa vanhempien Famlo-sovelluksesta ”Lapset ja perhe”. Valitse oikean lapsen kohdalta ”Puhelimet”, etsi kadonnut puhelin ja vahvista yhteyden katkaisu. Tämä estää kyseisen puhelimen pääsyn Famloon. Lapsen profiili, tapahtumat ja muut hyväksytyt puhelimet säilyvät. Ilman verkkoyhteyttä puhelin voi näyttää viimeksi tallennetun päivänäkymän, kunnes se saa jälleen yhteyden palvelimeen.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Miten poistan lapsiprofiilin pysyvästi?</summary>
+              <div class="faq-content"><p>Avaa vanhempien Famlo-sovelluksesta ”Lapset ja perhe” ja valitse oikean lapsen kohdalta ”Poista profiili”. Vahvista pysyvä poistaminen. Lapsen puhelinten yhteys katkaistaan ja profiili sekä henkilökohtaiset tiedot poistetaan. Jaetut tapahtumat voivat jäädä perhekalenteriin, mutta niiden yhteys tapahtuman luojaan poistetaan. Jos ainoastaan poistit lapsen perheestä, profiili säilyy ja voit palauttaa jäsenyyden.</p></div>
+            </details>
           </div>
+          <div class="cta-row"><a class="button button-primary" href="?app=kids#contact">Ota yhteyttä Famlo Kidsistä</a></div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <article class="support-panel reveal" id="delete-data">
+          <article class="support-panel" id="delete-data">
             <span class="eyebrow">Poista tili tai tiedot</span>
             <h2>Poista sovelluksessa tai pyydä apua täällä.</h2>
             <p>
@@ -184,7 +161,7 @@
 
       <section class="section" id="contact">
         <div class="container">
-          <article class="form-card reveal">
+          <article class="form-card">
             <span class="eyebrow">Yhteys</span>
             <h2>Lähetä viesti Famlolle</h2>
             <p class="form-intro">
@@ -192,14 +169,22 @@
               käyttää lomaketta myös kirjautumatta.
             </p>
 
+            <p>Jos olet lapsen vanhempi tai huoltaja, käytä omaa sähköpostiosoitettasi. Voit myös lähettää sähköpostia suoraan osoitteeseen <a href="mailto:contact@kapsdevelopment.com">contact@kapsdevelopment.com</a>.</p>
+
             <div id="form-status" class="form-status" aria-live="polite"></div>
 
             <iframe id="support-form-iframe" name="support_form_iframe" title="Piilotettu lähetyskohde" style="display:none;"></iframe>
 
-            <form id="support-form" action="https://formcarry.com/s/arQi40sZeJz" method="POST" accept-charset="UTF-8" target="support_form_iframe">
+            <form id="support-form" action="https://formcarry.com/s/arQi40sZeJz" method="POST" accept-charset="UTF-8">
               <input type="text" name="website" tabindex="-1" autocomplete="off" class="honeypot" />
               <input type="hidden" name="_next" id="nextField" value="" />
-              <input type="hidden" name="product" value="Famlo" />
+              <div class="field">
+                <label for="product">Mitä sovellusta asiasi koskee?</label>
+                <select id="product" name="product" required>
+                  <option value="Famlo">Famlo</option>
+                  <option value="Famlo kids">Famlo Kids</option>
+                </select>
+              </div>
               <input type="hidden" name="source" value="Famlo_Website_FI" />
 
               <div class="form-grid">
@@ -240,13 +225,7 @@
                 <button class="button button-primary" type="submit">Lähetä viesti</button>
               </div>
 
-              <p class="form-hint">
-                Älä jaa arkaluonteisia henkilötietoja. Virheilmoituksessa
-                kuvakaappaus, laite ja OS-versio ovat hyödyllisiä.
-              </p>
-              <p class="form-hint">
-                Lomake menee samaan tukikanavaan, jota käytämme muissa sovelluksissamme.
-              </p>
+              <p class="form-hint">Jätä QR-koodit, kirjautumistiedot ja lapsen kalenterin sisältö pois viestistä. Vastaanotamme lomakkeella lähetetyt viestit Formcarryn kautta. <a href="/fi/privacy/">Lue tietosuojaseloste</a>.</p>
             </form>
           </article>
         </div>
@@ -254,14 +233,14 @@
 
       <section class="section" id="faq">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-heading">
             <span class="eyebrow">UKK</span>
             <h2>Mitä ihmiset yleensä kysyvät ensin</h2>
             <p>Jos et löydä tarvitsemaasi täältä, käytä yllä olevaa lomaketta.</p>
           </div>
 
           <div class="faq-list">
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Miten ilmoitan virheestä Famlossa?</summary>
               <div class="faq-content">
                 <p>
@@ -271,7 +250,7 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Voinko ottaa yhteyttä, vaikka en ole kirjautunut?</summary>
               <div class="faq-content">
                 <p>
@@ -281,28 +260,25 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Mitä virheilmoitukseen kannattaa lisätä?</summary>
               <div class="faq-content">
-                <p>
-                  Tärkeintä on lyhyt kuvaus ongelmasta. Jos mahdollista, lisää
-                  kuvakaappaus, ajankohta, laite ja OS-versio.
-                </p>
+                <p>Tärkeintä on lyhyt kuvaus ongelmasta. Jos mahdollista, kerro myös ajankohta, laite ja käyttöjärjestelmän versio.</p>
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Miten pyydän tilin tai tietojen poistamista?</summary>
               <div class="faq-content">
                 <p>
                   Voit poistaa tilin sovelluksessa, jos olet kirjautunut ja toiminto
                   on saatavilla. Voit myös valita lomakkeessa <strong>Poista tili
-                  tai tiedot</strong> ja kirjoittaa, mitä haluat poistaa.
+                  tai tiedot</strong> ja kirjoittaa, mitä haluat poistaa. Jos haluat poistaa vain osan tiedoistasi, kerro mahdollisimman tarkasti, mitä tietoja pyyntö koskee.
                 </p>
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Voinko lähettää toiveita uusista ominaisuuksista?</summary>
               <div class="faq-content">
                 <p>
@@ -312,14 +288,10 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Mitä teen, jos sovelluksen tieto näyttää väärältä?</summary>
               <div class="faq-content">
-                <p>
-                  Lähetä viesti ja kerro hieman taustaa, kuten mitä korttia asia
-                  koskee, paikka, aika ja mielellään kuvakaappaus. Se helpottaa
-                  virheen löytämistä ja korjaamista.
-                </p>
+                <p>Kerro, missä kortissa näit virheen ja milloin. Näin meidän on helpompi löytää ja korjata se.</p>
               </div>
             </details>
           </div>
@@ -338,8 +310,8 @@
           <a href="../">Etusivu</a>
           <a href="#contact">Yhteys</a>
           <a href="#faq">UKK</a>
-          <a href="/en/privacy/">Privacy</a>
-          <a href="/en/terms/">Terms</a>
+          <a href="/fi/privacy/">Tietosuoja</a>
+          <a href="/fi/terms/">Käyttöehdot</a>
         </div>
       </div>
 
