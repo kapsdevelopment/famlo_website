@@ -55,10 +55,11 @@
     </header>
     <article class="card">
       <p>KAPSDEVELOPMENT AS (organisasjonsnummer 937 284 624) er behandlingsansvarlig for personopplysningene i Famlo, Famlo kids og brukerstøtten. Du kan skrive til <a href="mailto:contact@kapsdevelopment.com">contact@kapsdevelopment.com</a>.</p>
-      <p><a href="#famlo-kids">Til deg som bruker Famlo kids</a> · <a href="#deling">Hvem får se opplysningene?</a> · <a href="#rettigheter">Dine rettigheter</a></p>
+      <p><a href="#famlo-kids">Til deg som bruker Famlo kids</a> · <a href="#deling">Hvem får se opplysningene?</a> · <a href="#kalender-og-ki">Kalender og KI</a> · <a href="#rettigheter">Dine rettigheter</a></p>
 
       <h2 id="famlo-kids">Til deg som bruker Famlo kids</h2>
       <p>Legger du inn «Svømming», ser du den i «Min dag». De andre i familien kan se den når de åpner «Familien». Broren eller søsteren din får den i sin egen «Min dag» hvis dere begge skal være med. En aktivitet for hele familien vises hos alle.</p>
+      <p>Når du legger inn «Svømming» i Famlo kids, sendes ingenting til kunstig intelligens (KI). Hvis en voksen senere ber Famlo om å oppsummere dagen eller spør hva som skjer i dag, kan KI få vite om svømmingen.</p>
       <p>En voksen velger profilen din i Famlo og godkjenner telefonen din. Du trenger verken egen e-postadresse eller passord. Du kan be en voksen om hjelp hvis en aktivitet er feil, eller hvis du vil vite hva familien kan se.</p>
 
       <h3>Til foreldre og foresatte</h3>
@@ -76,8 +77,17 @@
 
       <h2 id="deling">Hvem får se opplysningene?</h2>
       <p>Familien kan se det som deles i familiekalenderen. Teknisk bruker vi Supabase til innlogging, database og lagring. Leverandører av vær, transport, kart og adressesøk får opplysningene som trengs for det aktuelle oppslaget. Appbutikken håndterer betalingen ved kjøp.</p>
-      <p><strong>KI i foreldreappen.</strong> Når en voksen bruker Famlo-chat eller en KI-generert dagsoppsummering, kan meldingen og relevant innhold fra familiens kalender sendes til KI-leverandøren. Det kan omfatte en aktivitet barnet har lagt inn i Kids. Ved bildegenerering kan leverandøren som lager avataren få bildet som sendes inn.</p>
+      <p><strong>Avatarbilder.</strong> Ved bildegenerering kan leverandøren som lager avataren få bildet som sendes inn.</p>
       <p><strong>Brukerstøtte.</strong> Kontaktskjemaet bruker Formcarry til å formidle navn, e-postadresse, valgt app, emne og melding. Vi bruker dette til å svare og følge opp saken. Du kan også skrive direkte til oss. Hold QR-koder og barnets kalenderinnhold utenfor henvendelsen.</p>
+
+      <h2 id="kalender-og-ki">Når deles kalenderopplysninger med KI?</h2>
+      <p>Famlo lager ingen automatisk dagsoppsummering. Når du åpner eller oppdaterer forsiden i foreldreappen, kan du se den sist lagrede oppsummeringen uten at kalenderopplysninger sendes til KI.</p>
+      <ul>
+        <li><strong>Når du ber om en dagsoppsummering.</strong> Trykker du «Generer» i Flagre, sender Famlo dagens pågående og kommende aktiviteter til KI-leverandøren for å lage oppsummeringen. Det kan også være aktiviteter et barn har lagt inn i Famlo kids.</li>
+        <li><strong>Når du chatter med Flagre.</strong> KI-leverandøren får meldingen din og de siste meldingene i samtalen. Spør du «Hva skjer i dag?», sender Famlo også dagens pågående og kommende aktiviteter. Spør du «Trenger vi paraply?», henter Famlo værmeldingen uten å slå opp i kalenderen. En aktivitet som allerede er nevnt i samtalen, kan fortsatt følge med i meldingene.</li>
+      </ul>
+      <p>Når kalenderen brukes, kan KI-leverandøren få aktivitetens tittel, dato, klokkeslett og eventuelle notater. Familie- og kalendernavn samt tekniske ID-er for familien, kalenderen, aktiviteten og den som opprettet eller endret den, kan også følge med.</p>
+      <p>Ved hver chatmelding mottar Famlos egen server også en kopi av opplysningene fra forsiden. Serveren bruker ordlyden i den siste meldingen til å velge hvilke opplysninger den henter til KI-svaret.</p>
 
       <h2>Lagring, frakobling og sletting</h2>
       <p>Vi behandler tekniske driftsopplysninger for å løse feil, beskytte tjenesten og hindre misbruk. Lagringstiden avhenger av formålet. Kalenderdata brukes så lenge de skal være tilgjengelige for brukeren eller familien. Ved sletting kan opplysninger fortsatt finnes i sikkerhetskopier til kopiene erstattes i ordinær drift. Opplysninger som må beholdes av sikkerhetshensyn eller etter loven, kan bli lagret lenger.</p>
