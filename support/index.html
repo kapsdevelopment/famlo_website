@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Famlo Support | Hjelp, kontakt og vanlige spørsmål</title>
+    <title>Brukerstøtte for Famlo og Famlo kids</title>
     <meta
       name="description"
-      content="Support for Famlo. Kontakt oss, meld feil, send ønsker og be om sletting av konto eller data."
+      content="Hjelp med Famlo og Famlo kids. Koble en telefon til familien, få hjelp med kalenderen eller be om sletting."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#c8f359" />
@@ -22,10 +22,10 @@
     <meta property="og:site_name" content="Famlo" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nb_NO" />
-    <meta property="og:title" content="Famlo Support | Hjelp, kontakt og vanlige spørsmål" />
+    <meta property="og:title" content="Brukerstøtte for Famlo og Famlo kids" />
     <meta
       property="og:description"
-      content="Kontakt Famlo-support, meld feil, send ønsker eller be om sletting av konto og data."
+      content="Kontakt oss om Famlo og Famlo kids, kalender, telefonkobling eller sletting."
     />
     <meta property="og:url" content="https://famlo.no/support/" />
     <meta property="og:image" content="https://famlo.no/assets/images/famlo_promo.png" />
@@ -37,14 +37,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      @media (min-width: 821px) {
+        #famlo-kids, #contact, #delete-data, #faq { scroll-margin-top: 8rem; }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "@id": "https://famlo.no/support/#webpage",
         "url": "https://famlo.no/support/",
-        "name": "Famlo Support",
-        "description": "Supportside for Famlo med kontaktskjema, vanlige spørsmål og informasjon om sletting av konto eller data.",
+        "name": "Brukerstøtte for Famlo og Famlo kids",
+        "description": "Supportside for Famlo og Famlo kids med kontaktskjema, vanlige spørsmål og informasjon om sletting av konto eller data.",
         "inLanguage": "nb-NO",
         "isPartOf": {
           "@type": "WebSite",
@@ -90,76 +95,48 @@
 
     <main>
       <section class="section support-hero">
-        <div class="container support-hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow lime">Support for Famlo</span>
-            <h1>Hjelp for spørsmål, feil, ønsker og sletting av data.</h1>
-            <p class="hero-lead">
-              Bruk denne siden hvis du vil melde feil, stille spørsmål, sende inn
-              ønsker eller be om sletting av konto eller data. Målet er at det
-              skal være like enkelt å få hjelp som å bruke appen.
-            </p>
-            <p class="support-copy">
-              Famlo bruker den samme kontaktkanalen vi allerede bruker i de andre
-              appene våre. Du kan også sende inn melding selv om du ikke er logget
-              inn eller bare bruker appen i guest-modus.
-            </p>
-
+        <div class="container">
+          <div class="hero-copy">
+            <h1>Hjelp med Famlo og Famlo kids</h1>
+            <p class="hero-lead">Få hjelp med appene eller kontakt oss uten å logge inn.</p>
             <div class="cta-row">
-              <a class="button button-primary" href="#contact">Åpne kontaktskjema</a>
+              <a class="button button-primary" href="#contact">Kontakt oss</a>
+              <a class="button button-secondary" href="#famlo-kids">Hjelp med Famlo kids</a>
               <a class="button button-secondary" href="#delete-data">Slett konto eller data</a>
-              <a class="button button-secondary" href="../">Til forsiden</a>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="support-hero-side reveal">
-            <article class="support-summary-card">
-              <span class="summary-kicker">Slik får du hjelp</span>
-              <h2>Én supportflyt for det meste.</h2>
-              <p>
-                Famlo bruker én enkel kontaktvei for spørsmål, feil, ønsker og
-                sletting av konto eller data.
-              </p>
-
-              <div class="support-mini-list">
-                <div class="support-mini-item">
-                  <span>1</span>
-                  <div>
-                    <strong>Velg hva det gjelder</strong>
-                    <p>Feilrapport, spørsmål, funksjonsønske eller sletting.</p>
-                  </div>
-                </div>
-
-                <div class="support-mini-item">
-                  <span>2</span>
-                  <div>
-                    <strong>Beskriv kort behovet</strong>
-                    <p>Gjerne med skjermbilde, tidspunkt, enhet eller OS-versjon ved feil.</p>
-                  </div>
-                </div>
-
-                <div class="support-mini-item">
-                  <span>3</span>
-                  <div>
-                    <strong>Send inn, også som gjest</strong>
-                    <p>Du trenger ikke være logget inn for å bruke supportsiden.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="support-pill-row" aria-label="Supportpunkter">
-                <span class="hero-chip">Guest-modus ok</span>
-                <span class="hero-chip blue">Vanlige spørsmål</span>
-                <span class="hero-chip orange">Slett konto eller data</span>
-              </div>
-            </article>
+      <section class="section" id="famlo-kids">
+        <div class="container">
+          <h2>Hjelp med Famlo kids</h2>
+          <p>Under utprøvingen gjelder veiledningen familier med tilgang til Famlo kids og «Barn og familie» i foreldreappen.</p>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Hvordan kobler jeg til en ny telefon?</summary>
+              <div class="faq-content"><p>Åpne Famlo kids på barnets telefon. Hvis den viser «Denne telefonen er frakoblet», trykk «Vis ny kode». Åpne vanlig Famlo på din egen enhet, velg «Skann QR-kode» og skann koden på barnets skjerm. Velg barnets eksisterende profil og trykk «Koble til». Barnet får tilbake avataren og kalenderen sin. Du kan også starte skanningen fra «Barn og familie».</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Hvorfor kan søsken se aktiviteten?</summary>
+              <div class="faq-content"><p>Når barnet legger inn «Svømming», vises den i barnets «Min dag» og i «Familien». Søsken får den i sin egen «Min dag» når de selv er valgt som deltakere, eller aktiviteten gjelder hele familien.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Hvordan kobler jeg fra en mistet telefon?</summary>
+              <div class="faq-content"><p>Åpne «Barn og familie» i vanlig Famlo. Velg «Telefoner» for riktig barn, finn den aktuelle telefonen og bekreft frakoblingen. Dette sperrer telefonens tilgang til Famlo. Barnets profil, aktiviteter og andre godkjente telefoner beholdes. En telefon uten nett kan fortsatt vise sin sist lagrede dagsvisning til appen får kontakt igjen.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Hvordan sletter jeg en barneprofil permanent?</summary>
+              <div class="faq-content"><p>Åpne «Barn og familie» i vanlig Famlo og velg «Slett profil» for riktig barn. Bekreft permanent sletting. Barnets telefoner kobles fra, og profilen og personlige data slettes. Delte aktiviteter kan bli stående i familiekalenderen med koblingen til oppretteren fjernet. Har du bare valgt «Fjern fra familien», er profilen beholdt og kan gjenopptas.</p></div>
+            </details>
           </div>
+          <div class="cta-row"><a class="button button-primary" href="?app=kids#contact">Kontakt oss om Famlo kids</a></div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <article class="support-panel reveal" id="delete-data">
+          <article class="support-panel" id="delete-data">
             <span class="eyebrow">Slett konto eller data</span>
             <h2>Slett i appen eller be om hjelp her.</h2>
             <p>
@@ -190,13 +167,15 @@
 
       <section class="section" id="contact">
         <div class="container">
-          <article class="form-card reveal">
+          <article class="form-card">
             <span class="eyebrow">Kontakt</span>
             <h2>Send melding til Famlo</h2>
             <p class="form-intro">
               Send en kort beskjed om feil, ønsker eller spørsmål. Du kan bruke
               skjemaet selv om du ikke er logget inn.
             </p>
+
+            <p>Som foresatt bruker du din egen e-postadresse. Du kan også skrive til <a href="mailto:contact@kapsdevelopment.com">contact@kapsdevelopment.com</a>.</p>
 
             <div id="form-status" class="form-status" aria-live="polite"></div>
 
@@ -212,7 +191,6 @@
               action="https://formcarry.com/s/arQi40sZeJz"
               method="POST"
               accept-charset="UTF-8"
-              target="support_form_iframe"
             >
               <input
                 type="text"
@@ -222,7 +200,13 @@
                 class="honeypot"
               />
               <input type="hidden" name="_next" id="nextField" value="" />
-              <input type="hidden" name="product" value="Famlo" />
+              <div class="field">
+                <label for="product">Hvilken app gjelder det?</label>
+                <select id="product" name="product" required>
+                  <option value="Famlo">Famlo</option>
+                  <option value="Famlo kids">Famlo kids</option>
+                </select>
+              </div>
               <input type="hidden" name="source" value="Famlo_Website" />
 
               <div class="form-grid">
@@ -276,12 +260,8 @@
               </div>
 
               <p class="form-hint">
-                Unngå å dele sensitiv personlig informasjon. Hvis du rapporterer en
-                feil, er det nyttig med skjermbilde, enhet og OS-versjon.
-              </p>
-              <p class="form-hint">
-                Dette skjemaet går direkte til kontaktkanalen vi allerede bruker i
-                de andre appene.
+                Hold QR-koder, innloggingsopplysninger og barnets kalenderinnhold utenfor meldingen.
+                Vi bruker Formcarry til å motta skjemaet. <a href="/privacy/">Les om personvern</a>.
               </p>
             </form>
           </article>
@@ -290,7 +270,7 @@
 
       <section class="section" id="faq">
         <div class="container">
-          <div class="section-heading reveal">
+          <div class="section-heading">
             <span class="eyebrow">Vanlige spørsmål</span>
             <h2>Det folk ofte lurer på først</h2>
             <p>
@@ -299,7 +279,7 @@
           </div>
 
           <div class="faq-list">
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Hvordan melder jeg en feil i Famlo?</summary>
               <div class="faq-content">
                 <p>
@@ -310,27 +290,27 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Kan jeg kontakte dere selv om jeg ikke er logget inn?</summary>
               <div class="faq-content">
                 <p>
                   Ja. Du kan bruke supportskjemaet selv om du ikke er logget inn
-                  eller bare bruker appen i guest-modus.
+                  eller bare bruker appen i gjestemodus.
                 </p>
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Hva bør jeg sende med i en feilrapport?</summary>
               <div class="faq-content">
                 <p>
                   Det viktigste er en kort beskrivelse av problemet. Hvis du har
-                  det, send gjerne med skjermbilde, tidspunkt, enhet og OS-versjon.
+                  det, oppgi tidspunkt, enhet og OS-versjon.
                 </p>
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Hvordan ber jeg om sletting av konto eller data?</summary>
               <div class="faq-content">
                 <p>
@@ -342,7 +322,7 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Kan jeg sende inn ønsker til nye funksjoner?</summary>
               <div class="faq-content">
                 <p>
@@ -352,12 +332,12 @@
               </div>
             </details>
 
-            <details class="faq-item reveal">
+            <details class="faq-item">
               <summary>Hva gjør jeg hvis noe informasjon i appen ser feil ut?</summary>
               <div class="faq-content">
                 <p>
                   Send oss en melding med litt kontekst, for eksempel hvilket kort
-                  det gjelder, sted, tidspunkt og gjerne et skjermbilde. Da er det
+                  det gjelder og når det skjedde. Da er det
                   mye enklere å finne og rette feilen.
                 </p>
               </div>
@@ -378,8 +358,8 @@
           <a href="../">Forside</a>
           <a href="#contact">Kontakt</a>
           <a href="#faq">Vanlige spørsmål</a>
-          <a href="../privacy/">Privacy</a>
-          <a href="../terms/">Terms</a>
+          <a href="../privacy/">Personvern</a>
+          <a href="../terms/">Brukervilkår</a>
         </div>
       </div>
 

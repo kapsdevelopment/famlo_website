@@ -407,6 +407,21 @@ document.querySelectorAll("[data-year]").forEach((element) => {
     return;
   }
 
+  form.target = iframe.name;
+  const product = document.getElementById("product");
+  if (product) {
+    const selectKids = () => {
+      product.querySelector('option[value="Famlo kids"]').defaultSelected = true;
+      product.value = "Famlo kids";
+    };
+    if (new URLSearchParams(location.search).get("app") === "kids" || location.hash === "#famlo-kids") {
+      selectKids();
+    }
+    window.addEventListener("hashchange", () => {
+      if (location.hash === "#famlo-kids") selectKids();
+    });
+  }
+
   if (nextField) {
     nextField.value = `${window.location.origin}${window.location.pathname}?submitted=1#contact`;
   }

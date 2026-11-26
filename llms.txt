@@ -11,8 +11,8 @@
 - Support: https://famlo.no/support/
 - English support: https://famlo.no/en/support/
 - Suomenkielinen tuki: https://famlo.no/fi/support/
-- Privacy policy (English only): https://famlo.no/privacy/
-- Terms of use (English only): https://famlo.no/terms/
+- Personvern for Famlo og Famlo kids: https://famlo.no/privacy/
+- Brukervilkår for Famlo og Famlo kids: https://famlo.no/terms/
 - Sitemap: https://famlo.no/sitemap.xml
 
 ## Nøkkelfakta
